@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Black Theme PVZ",
+  "version": "0.1",
+  "description": "Black Theme Turbo PVZ",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://pvz.ozon-dostavka.ru/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
